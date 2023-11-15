@@ -16,7 +16,7 @@ environment {
         }
         stage('SonarQube analysis') {
         environment {
-        scannerHome = tool 'vijay-sonar-scanner'
+        scannerHome = tool 'vijay-sonaraube-scanner'
         }
             steps{
                 withSonarQubeEnv('vijay-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
